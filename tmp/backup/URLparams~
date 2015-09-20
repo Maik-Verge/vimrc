@@ -1,0 +1,12 @@
+script src="http://isithackday.com/arrpi.php?callback=received&format=json&text=Hello">
+
+So, in a URL< a question mark indicates the end of the location. Once we end the location we're actually passing parameters into the URL. Parameters are separated by &
+
+So here, we actually have a callback, a format, and text. 
+
+Callback= is a parameter that tells the server what javascript function to call. 
+
+So in this scenario, we would have written a function called received.
+
+function received(json){
+	document.getElementById("output").value = json.translation.pirate;

@@ -1,0 +1,14 @@
+<texarea id="whatevs">Text area is just like input text except it can have multiple lines.</textarea>
+
+<select id="lang">
+	<option value="en">American English</option>
+	<option value="en_GB">British English</option>
+	<option value="en_AU">Australian English</option>
+	<option value="ru">Russian</option>
+</select>
+
+In this scenario you'd have to add
+
++document.getElementById("lang")+ Into the middle of the URL instead of just telling it to use English.
+
+This goes along with the pirate demo, and this bit is used to change the accent when speaking text aloud. 

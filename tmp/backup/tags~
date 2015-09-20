@@ -1,0 +1,61 @@
+<textarea id="whatevs">Text area is just like input text except it can have multiple lines.</textarea>
+
+<select id="lang">
+	<option value="en">American English</option>
+	<option value="en_GB">British English</option>
+	<option value="en_AU">Australian English</option>
+	<option value="ru">Russian</option>
+</select>
+
+In this scenario you'd have to add
+
++document.getElementById("lang")+ Into the middle of the URL instead of just telling it to use English.
+
+This goes along with the pirate demo, and this bit is used to change the accent when speaking text aloud. 
+
+window.onblur - means when you leave the window, minimized, other tab etc. 
+window.onfocus - guess what that does... pfff
+
+<template>- USE THIS you can finally safely declare a chunk of markup that you don't want the browser to render or manipulate. It lets you declare chunks of html that won't affect the display of the page in any way. It can be cloned for use anywhere on the page. 
+
+	*Inert- all markup is inert until it is cloned and utilized on the page. 
+	*Hidden from selectors-
+
+	example- <template>
+				<p id="p"></p>
+			</template>
+	
+	Because it is hidden. You can't parse the page and find document.getElementById and find the id p;
+
+	document.getElementById('p'); //will return null
+
+	*Flexible Placement- you can put in the <head><body><frameset> even a child of a table or a select. 
+
+	(It's a good idea to be consistent though)
+
+How to activate a template
+1. you need to get a reference for a template
+
+aka
+
+var template = document.querySelector('#mytemplate');
+
+document.getElementById or document.getElementByTagName works as well
+
+2. You need to import node to create a clone of the templates content. You pass the templates content to the import node method. 
+
+var clone = document.importNode(template.content, true);
+
+The content property returns everything between <template></template>
+
+true is important here, because it determines whether to do a deep copy.
+
+What that means, is this boolean determines whether the descendants will be copied (I'm assuming this means nested children) I don't know a reason yet why this should not be set to true. I was wrong, nested templates need to be cloned manually.
+
+3. Finally add the content to the page as desired. 
+
+document.body.appendChild(clone);
+
+
+
+

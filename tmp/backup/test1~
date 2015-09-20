@@ -1,0 +1,10 @@
+function write(message) {
+		document.getElementById('message').innerHTML += message + '<br>';
+};
+
+var streetNumber = 49;
+var streetName = "Brunswick";
+write (typeof streetNumber + " " + streetNumber);
+write (typeof streetName + " " + streetName);
+
+

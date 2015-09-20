@@ -1,0 +1,29 @@
+//Registering Elements//
+
+1.  Create a prototype
+
+var SlickTabs = Object.creat(HTMLElement.prototype);
+//add properties and functions to prototype here. 
+
+You can extened the HTMLElement to an object such as a button. I'm not sure how this is done. 
+
+2. You must register the element using.
+
+document.registerElement('slick-tabs');
+
+
+3. Use it! (add to DOM or place tag on page)
+
+document.body.appendChild(new SlickTabs());
+
+
+You can extend custom elements too! This concept can help avoid copy and pasting to new elements that merely extend other custom elements.
+
+var XFooProto = Object.create(HTMLElement.prototype);
+
+var XFooExtended = document.registerElement('x-foo-extended', {
+	prototype: XFooProto,
+	extends: 'x-foo'
+});
+
+Same principles of object oriented programming apply here.

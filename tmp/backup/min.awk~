@@ -1,0 +1,2 @@
+BEGIN { FS=";"; RS="\n\n" ; OFS=" "; }
+{ print }

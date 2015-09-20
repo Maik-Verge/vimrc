@@ -1,0 +1,5 @@
+//Custom Elements
+
+1. Define your own HTML elements. Name-must-have-a-dash. Even-if-it's-one-word.
+
+2. Custome elements can extend existing html elements.  

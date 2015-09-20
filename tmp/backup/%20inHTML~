@@ -1,0 +1,1 @@
+use the function encodeURIComponent so that the %20 for a space is just automatically added. 

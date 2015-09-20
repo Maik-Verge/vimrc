@@ -1,0 +1,9 @@
+For these notes, imagine you would be entering this into a console. 
+
+var arr = document.getElementByTagName("script");
+
+arr.length will return the number of items in the array. 
+
+arr[0].src or arr[0]["src"] will return just the src of the item in the array. 
+
+

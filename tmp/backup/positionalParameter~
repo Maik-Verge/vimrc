@@ -1,0 +1,16 @@
+//POSITIONAL PARAMETERS//
+
+Easily pass values into a script
+
+command <arg1> <arg2> <arg3> ... <argn> etc etc
+
+cp ~/bin/script1.sh ~/archive/script1.sh
+
+$# = total number of arguments
+$@ = All arguments as a list
+$* = all arguments as a single value
+
+The above fucks up in osx too
+
+shift - literally shifts arguments in a script. (Not really sure what I'd use this for yet)
+

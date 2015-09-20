@@ -1,0 +1,16 @@
+function list(tagName, propName){
+	var arr = document.GetElementsByTagName(tagName);
+	for(var i = 0; i < arr.length; i+=1){
+		if (arr[i][propName]) {
+			console.log(arr[i][propName]);
+		}
+	}
+}
+
+//now we need to call the function
+
+list("script", "src");
+list("img", "src");
+list("audio","src");
+list("video","src");
+list("a", "href");

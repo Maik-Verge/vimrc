@@ -1,0 +1,11 @@
+//
+//This is the console output log
+//
+var Bot = require('./index')
+	,config = require('./config');
+
+var bot = new Bot(config);
+
+console.log('Johhny5: Running.');
+
+

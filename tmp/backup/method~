@@ -1,0 +1,8 @@
+A method is a function on top of a variable. 
+
+Example: 
+
+var password = "answer*randomstuff"
+indexOf is a method - you call it by using the variable and a dot like this:
+
+password.indexOf("*");

@@ -1,0 +1,26 @@
+////process.argv.forEach(function(val, index, array) {
+////	console.log(index + ': ' + val);
+////});
+////
+////var val = 2;
+////
+////process.argv.
+//
+//function logArray(element, index, array){
+//	console.log('a[' + index + '] = ' + element);
+//}
+//
+//[2,5,9].forEach(logArray);
+//
+//for(var i = 0; i < argLength; i++)
+//
+//var arg = Number(process.argv[2]);
+//var argLength = arg.length;
+//
+var result = 0;
+
+for(var i = 2; i < process.argv.length; i++){
+	result = result + Number(process.argv[i]);
+}
+
+console.log(result);
