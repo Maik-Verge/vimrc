@@ -30,4 +30,12 @@ set nolist
 
 set foldenable
 
+<<<<<<< HEAD
+=======
+" Backups
+set backupdir=~/.vim/tmp/backup// " backups
+set directory=~/.vim/tmp/swp// " swap files
+set backup 
+
+>>>>>>> cb330e8d020c3c40b61882a0fd317bc50c6ca8c9
 set background=dark
