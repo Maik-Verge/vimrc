@@ -1,8 +1,0 @@
-//This is interesting. Javascript can actually use a function to create scripts within a page. 
-//
-//So instead of <script src="main.js" type="text/javascript"></script>
-//
-//You can actually
-
-function pirate_talk(){
-	var script = document
