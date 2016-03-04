@@ -2,3 +2,4 @@
 /bundle/dash.vim
 /bundle/tern_for_vim
 /bundle/typescript-vim
+.gitignore
